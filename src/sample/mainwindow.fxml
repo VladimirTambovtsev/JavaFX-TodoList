@@ -23,7 +23,7 @@
 <?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.control.ToggleButton?>
 <BorderPane fx:id="mainBorderPane" fx:controller="sample.Controller"
-            xmlns:fx="http://javafx.com/fxml">
+            xmlns:fx="http://javafx.com/fxml" stylesheets="@mainwindow.css">
     <top>
         <VBox>
             <MenuBar>
@@ -37,7 +37,7 @@
             </MenuBar>
             <ToolBar>
                 <HBox>
-                    <Button text="New" onAction="#showNewItemDialog" >
+                    <Button styleClass="button" text="New" onAction="#showNewItemDialog" >
                         <tooltip>
                             <Tooltip text="Add new todo item" />
                         </tooltip>
